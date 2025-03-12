@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Habibi&family=Irish+Grover&display=swap');
+* {
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+  }
+/* ROOT VARIABLES */
+:root {
+    font-family: 'Habibi', serif;
+    font-size: 1em;
+
+    --Green: #06A816;
+    --Orange: #E75D02;
+    --Black: #000000;
+    --White: #ffffff;
+    
+}
+
+h1, h2, h3 {
+    font-family: 'Irish Grover', cursive;
+}
+
+h1 {
+    size: 2.5em;
+    text-shadow: #000000;
+
+}
+
+h2 {
+    font-weight: normal;
+    size: 1.75em;
+    margin-left: 60px;
+}
+
+h3, p {
+    font-weight: normal;
+    text-align: center;
+    size: 1.25em;
+}
+
+
+header, footer {
+
+    background-color: var(--Green);
+    margin-bottom: 60px;
+}
+
+nav li {
+
+    list-style: none;
+}
+
+nav a {
+    text-decoration:none;
+    background-color: var(--Orange);
+    display:block;
+    text-align:center;
+    color:var(--White);
+    outline: #ffffff;
+    outline-width: 2em;
+    border-radius: 5px;
+    font-weight:normal;
+    margin:10px;
+    padding:10px;
+  }
+
+
+  @media screen and (min-width:428px) { 
+    ul{
+        margin-left: 80px;
+        display: grid;
+        grid-template-columns: 1fr  ;
+    }
+    
+
+ }
+ @media screen and (min-width:834px) { 
+    ul{
+        margin-left: 80px;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    }
+    
+
+ }
+
+
+
+ @media screen and (min-width:1280px) { 
+    ul{
+        margin-left: 80px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+
+ }
+
+ @media screen and (min-width:1440px) { 
+ ul{
+    margin-left: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+  li {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    margin: 20px;
+  }
+
+  li img {
+    display: block;
+    width: 100%; 
+    height: auto;
+  }
+
+  li h3 {
+    size: 1.25em;
+
+    font-family: 'Habibi', serif;
+    font-weight: normal;
+    position: absolute;
+    bottom: 130px;
+    width: 70%;
+    left: 50px;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6); 
+    margin: 0;
+    padding: 10px;
+    font-size: 1.2em;
+  }
+
+  p{
+    text-align: left;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+  }
+
+
+
+
