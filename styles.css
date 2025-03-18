@@ -163,6 +163,10 @@ footer{
   text-align: center;
 }
 
+footer ul{
+  list-style: none;
+}
+
 footer * {
   margin: 5px;
 }
@@ -180,10 +184,6 @@ footer small{
   color: #06A816;
 }
 
-@media screen and (min-width:428px) { 
-
-}
-
 @media screen and (min-width:834px) { 
   main ul{
     grid-template-columns: 1fr 1fr;
@@ -191,18 +191,116 @@ footer small{
   header{ 
      grid-template-columns: 1fr 1fr;
   }
-  nav ul{
+  nav{
     grid-column: 1/3;
+  }
+  nav ul{
     grid-template-columns: 1fr 1fr;
+    margin: 40px 0px 40px 0px;
+  }
+  header > h1{
+
+    text-align: left;
+    padding-left: 10px;
+  
+  }
+  header > p{
+
+    padding-top: 15px;
+  
   }
 
+  footer{
 
+    grid-template-columns: 1fr 1fr;
+    border: none;
+  }
+
+  
+  footer ul:first-of-type{ 
+
+    grid-column: 1/2;
+    margin-bottom: 0px;
+
+  }
+  footer h2:first-of-type{ 
+    grid-column: 1/2;
+    margin-top: 60px;
+    
+
+  }
+  footer ul:last-of-type{ 
+    position:relative;
+    bottom: 70px;
+
+    grid-column: 2/3;
+    margin-bottom: 0px;
+
+
+
+  }
+  footer h2:last-of-type{ 
+    position:relative;
+    bottom: 30px;
+
+    grid-column: 2/3;
+  } 
+    small{
+    grid-column: 1/3;
+  }
 }
 
 @media screen and (min-width:1280px) { 
+  main ul{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  header{
+    background-color: var(--Green);
+    padding-bottom: 0px;
+  }
+  nav{
+    grid-column: 2/3;
+    padding-bottom: 0;
+    position: relative;
+    bottom: 60px;
+  }
+  header > p{
+    grid-column: 1/2;
+    text-align: left;
+    margin-left: 10px;
 
+  }
+  footer{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  footer ul:first-of-type{ 
+    grid-column: 2/3;
+    position: relative;
+    top: 10px;
+  }
+  footer h2:first-of-type{ 
+    grid-column: 1/2;
+    position: relative;
+    bottom: 20px;
+  }
+  footer ul:last-of-type{ 
+    grid-column: 4/5;
+    position: relative;
+    top: 0px;
+  }
+  footer h2:last-of-type{ 
+    grid-column: 3/4;
+    position: relative;
+    top: 37px;
+  } 
+  footer small{
+    grid-column: 1/5;
+  }
 }
 @media screen and (min-width:1440px) { 
+  main ul{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 
 }
 
