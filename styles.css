@@ -22,7 +22,7 @@ h1, h2, h3 {
 
 h1 {
   color: var(--White);
-    size: 4em;
+    font-size: 2em;
     text-shadow: 2px 2px #000000;
 
 
@@ -30,13 +30,13 @@ h1 {
 
 h2 {
     font-weight: normal;
-    size: 1.75em;
+    font-size: 1.75em;
 }
 
 h3, p {
     font-weight: normal;
     text-align: center;
-    size: 1.25em;
+    font-size: 1.25em;
 }
 h3{
   margin: 10px;
@@ -304,10 +304,3 @@ footer small{
 
 }
 
-/* 
- 
-
-    Small- min-width: 428px
-Medium- min-width: 834px
-Large- min-width: 1280px
-XL- min-width: 1440px
